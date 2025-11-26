@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+
+<div th:fragment="navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/applications}">JobTracker</a>
+
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+
+                    <!-- Logged in user -->
+                    <li class="nav-item me-3 text-white">
+                        👤 <span sec:authentication="name"></span>
+                    </li>
+
+                    <!-- Logout button -->
+                    <li class="nav-item">
+                        <form th:action="@{/logout}" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-outline-light btn-sm">
+                                Logout
+                            </button>
+                        </form>
+                    </li>
+                    <!-- Admin -->
+                    <li class="nav-item me-3" sec:authorize="hasRole('ADMIN')">
+                        <a class="nav-link text-white" th:href="@{/admin/users}">Admin Panel</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+</html>
