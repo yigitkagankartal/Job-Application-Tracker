@@ -11,16 +11,22 @@ A web-based application where users can track and manage their job applications,
 # 📊 Preview
 
 <p align="center">
-  <img src="./pic/login.png" alt="Login" width="45%" />
-  <img src="./pic/sql.png" alt="Database" width="45%" />
+  <img src="./pic/sql.png" alt="Database" width="53%" />
+  <img src="./pic/login.png" alt="Login" width="37%" />
+  </p>
+<p align="center">
+  <img src="./pic/view.png" alt="View" width="51%"/>
+ <img src="./pic/edit.png" alt="Edit" width="39%" />
+  
+   
+</p>
+
+  
 </p>
 <p align="center">
-  <img src="./pic/view.png" alt="View" width="45%" />
-  <img src="./pic/edit.png" alt="Edit" width="45%" />
-</p>
-<p align="center">
-  <img src="./pic/filter.png" alt="Filter" width="45%" />
-  <img src="./pic/newadd.png" alt="New" width="45%" />
+ 
+  <img src="./pic/filter.png" alt="Filter" width="52%" />
+  <img src="./pic/newadd.png" alt="New" width="38%" />
 </p>
 
 ---
